@@ -30,17 +30,17 @@
     This API functions same as above but it accespts sudoko skeleton from user as json array.
     The request bdoy should be in below json array format and the places which are not known need to be 0.
     
-    [
-        [1,0,4,0,0,0,0,0,9],
-        [0,0,0,0,0,0,0,0,0],
-        [0,6,5,0,2,0,0,0,0],
-        [0,0,9,0,1,0,0,0,6],
-        [0,0,0,0,0,8,0,5,1],
-        [0,0,0,7,0,0,2,0,4],
-        [5,3,0,0,0,2,0,0,0],
-        [0,0,6,0,0,3,1,9,2],
-        [0,4,0,0,0,6,0,3,0]
-    ]
+        [
+          [1,0,4,0,0,0,0,0,9],
+          [0,0,0,0,0,0,0,0,0],
+          [0,6,5,0,2,0,0,0,0],
+          [0,0,9,0,1,0,0,0,6],
+          [0,0,0,0,0,8,0,5,1],
+          [0,0,0,7,0,0,2,0,4],
+          [5,3,0,0,0,2,0,0,0],
+          [0,0,6,0,0,3,1,9,2],
+          [0,4,0,0,0,6,0,3,0]
+        ]
 
 * GET _/move/{row}/{col}/{val}_
 
@@ -68,14 +68,14 @@
     This API is addon which I added to get the current status of Sudoku game
     The response is in below format
 
-    1 * 6 * 9 5 * 8 *
-    * * * * * * * * 1
-    * * 4 * 2 * * * *
-    * * 8 * * 3 7 * *
-    * * 2 8 * * * 4 3
-    7 * * 4 * * * * *
-    5 * * * 1 * * 6 *
-    * 2 * * * 6 * 7 5
-    * 4 * * * * * * *
+        1 * 6 * 9 5 * 8 *
+        * * * * * * * * 1
+        * * 4 * 2 * * * *
+        * * 8 * * 3 7 * *
+        * * 2 8 * * * 4 3
+        7 * * 4 * * * * *
+        5 * * * 1 * * 6 *
+        * 2 * * * 6 * 7 5
+        * 4 * * * * * * *
 
     where the * is the values user needs to figure out
